@@ -1,0 +1,30 @@
+{
+    "last_updated": "2025-09-28T05:39:54.234151Z",
+    "top5": [
+        {
+            "name": "XRP",
+            "symbol": "XRP",
+            "score": 55
+        },
+        {
+            "name": "Bitcoin",
+            "symbol": "BTC",
+            "score": 50
+        },
+        {
+            "name": "Solana",
+            "symbol": "SOL",
+            "score": 50
+        },
+        {
+            "name": "Dogecoin",
+            "symbol": "DOGE",
+            "score": 50
+        },
+        {
+            "name": "Wrapped Bitcoin",
+            "symbol": "WBTC",
+            "score": 50
+        }
+    ]
+}
