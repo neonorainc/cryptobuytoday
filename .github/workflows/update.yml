@@ -1,0 +1,27 @@
+name: Hourly Update
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+
+jobs:
+  update-coins:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Run fetch_data.py
+        run: python backend/fetch_data.py
+      - name: Commit & Push changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add backend/update.json
+          git commit -m "Hourly update"
+          git push
+        continue-on-error: true
