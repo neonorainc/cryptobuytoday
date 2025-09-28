@@ -7,7 +7,7 @@ import talib
 # ---------- PARAMETERS ----------
 COINGECKO_API = "https://api.coingecko.com/api/v3/coins/markets"
 NEWS_API = "https://newsapi.org/v2/everything"
-NEWS_KEY = "YOUR_NEWSAPI_KEY"  # Replace with your key
+NEWS_KEY = "1423ed75dc854279a21166e5a06f1592"  # Replace with your key
 VS_CURRENCY = "usd"
 TOP_N_COINS = 20
 
